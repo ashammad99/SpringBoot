@@ -41,8 +41,7 @@ public class StudentService {
         Student std = studentRepo.findById(id).get();
         return String.format("%s", std);
     }
-
-   
+    
     public String addStudent(Student std) {
         studentRepo.save(std);
         return String.format("%s", "Successfully added new Studnet");
